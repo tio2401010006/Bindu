@@ -1,0 +1,155 @@
+:root {
+  --primary: rgba(223, 105, 81, 1);
+}
+.yesteryear-regular {
+  font-family: "Yesteryear", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+/* Navbar Style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .navbar-logo {
+  display: block;
+  position: relative;
+}
+
+.navbar .navbar-nav a {
+  color: aliceblue;
+  display: inline-block;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin: 0.3rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+/* Isi */
+.isi {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/location\ bindu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.isi::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+}
+.isi .judul {
+  text-align: center;
+  justify-content: center;
+  max-width: 65rem;
+  line-height: 1.7;
+}
+
+.isi .judul h1 {
+  font-size: 0.9rem;
+  color: #fff;
+}
+.isi .judul p {
+  font-size: 10rem;
+  color: #fff;
+  font-family: "Yesteryear", cursive;
+}
+.location-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .location-section h2 {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .location-section h2::before {
+      content: "📍";
+      font-size: 26px;
+    }
+
+    .map-container {
+      text-align: center;
+    }
+
+    .map-container a {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2a5db0;
+      text-decoration: none;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .location-description {
+      font-size: 14px;
+      line-height: 1.7;
+      text-align: justify;
+      color: #333;
+    }
